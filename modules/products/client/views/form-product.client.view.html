@@ -1,0 +1,49 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.product._id ? 'Edit Product' : 'New Product'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.productForm" class="form-horizontal" ng-submit="vm.save(vm.form.productForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Name</label>
+          <input name="name" type="text" ng-model="vm.product.name" id="name" class="form-control" placeholder="Name" required>
+          <div ng-messages="vm.form.productForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Product name is required.</p>
+
+          <label class="control-label" for="manufacturer">Manufacturer</label>
+          <input name="manufacturer" type="text" ng-model="vm.product.manufacturer" id="manufacturer" class="form-control" placeholder="Manufacturer" >
+
+          <label class="control-label" for="upc">UPC Number</label>
+          <input name="upc" type="text" ng-model="vm.product.upc" id="upc" class="form-control" placeholder="123456789" >
+
+          <label class="control-label" for="inventory">Inventory</label>
+          <input name="inventory" type="number" ng-model="vm.product.inventory" id="inventory" class="form-control" placeholder="1" >
+
+          <label class="control-label" for="cost">Cost</label>
+          <input name="cost" type="number" ng-model="vm.product.cost" id="cost" class="form-control" placeholder="" >
+
+          <label class="control-label" for="price">Price</label>
+          <input name="price" type="number" ng-model="vm.product.price" id="price" class="form-control" placeholder="" >
+
+          <label class="control-label" for="department">Department</label>
+          <input name="department" type="text" ng-model="vm.product.department" id="department" class="form-control" placeholder="" >
+
+          <label class="control-label" for="description">Description</label>
+          <input name="description" type="text" ng-model="vm.product.description" id="description" class="form-control" placeholder="" >
+
+           <label class="control-label" for="imgsrc">Image Link</label>
+          <input name="imgsrc" type="text" ng-model="vm.product.imgsrc" id="imgsrc" class="form-control" placeholder="" >
+
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.product._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

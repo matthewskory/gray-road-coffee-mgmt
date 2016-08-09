@@ -1,0 +1,43 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.employee._id ? 'Edit Employee' : 'New Employee'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.employeeForm" class="form-horizontal" ng-submit="vm.save(vm.form.employeeForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Name</label>
+          <input name="name" type="text" ng-model="vm.employee.name" id="name" class="form-control" placeholder="Name" required>
+          <div ng-messages="vm.form.employeeForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Employee name is required.</p>
+          </div>
+
+          <label class="control-label" for="department">Department</label>
+          <input name="department" type="text" ng-model="vm.employee.department" id="department" class="form-control">
+
+          <label class="control-label" for="address">Address</label>
+          <input name="address" type="text" ng-model="vm.employee.address" id="address" class="form-control" placeholder="Address" >
+
+          <label class="control-label" for="phonenumber">Phone Number</label>
+          <input name="phonenumber" type="text" ng-model="vm.employee.phonenumber" id="phonenumber" class="form-control" placeholder="(555)122-2233" >
+
+          <label class="control-label" for="email">Email</label>
+          <input name="email" type="text" ng-model="vm.employee.email" id="email" class="form-control" placeholder="employee@valueville.com" required>
+            
+          <label class="control-label" for="hiredate">Date of Hire</label>
+          <input name="hiredate" type="date" ng-model="vm.employee.hiredate" id="hiredate" class="form-control">
+
+          <label class="control-label" for="notes">Notes</label>
+          <input name="notes" type="textarea" ng-model="vm.employee.notes" id="notes" class="form-control" placeholder="" required>
+
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.employee._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

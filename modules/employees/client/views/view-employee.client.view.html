@@ -1,0 +1,37 @@
+<section>
+  <div class="page-header">
+    <h1 data-ng-bind="vm.employee.name"></h1>
+    <hr>
+    <p><b>Address</b></p>
+    <p data-ng-bind="vm.customer.address"></p>
+    <p><b>Phone Number </b></p>
+    <p data-ng-bind="vm.customer.phonenumber"></p>
+    <p><b>Email</b></p>
+    <p data-ng-bind="vm.customer.email"></p>
+    <p><b>Notes</b></p>
+    <p data-ng-bind="vm.customer.notes"></p>
+    
+
+  </div>
+  <div class="pull-right"
+       data-ng-show="vm.employee.isCurrentUserOwner">
+    <a class="btn btn-primary"
+       data-ui-sref="employees.edit({ employeeId: vm.employee._id })">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" data-ng-click="vm.remove()">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span data-ng-bind="vm.employee.created | date:'mediumDate'"></span>
+      by
+      <span data-ng-if="vm.employee.user"
+            data-ng-bind="vm.employee.user.displayName"></span>
+      <span data-ng-if="!vm.employee.user">Deleted User</span>
+    </em>
+  </small>
+  <p class="lead" data-ng-bind="vm.employee.content"></p>
+</section>

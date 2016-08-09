@@ -478,7 +478,7 @@
 * Update users.authentication.server.controller.js ([786c546](https://github.com/meanjs/mean/commit/786c546))
 * Updated angular-file-upload to use static dependency ([a5bceb9](https://github.com/meanjs/mean/commit/a5bceb9))
 * Updated routes and a logic fix ([03a4042](https://github.com/meanjs/mean/commit/03a4042))
-* updated the development.js environment configuration file to use the mean-dev database instead of me ([2e03d13](https://github.com/meanjs/mean/commit/2e03d13))
+* updated the development.js environment configuration file to use the valueville-dev database instead of me ([2e03d13](https://github.com/meanjs/mean/commit/2e03d13))
 * updating 0.4.0 merged branch to support the declerative db connection object instead of just a conne ([b76c2cd](https://github.com/meanjs/mean/commit/b76c2cd))
 * updating gitignore file to disregard the _site/ directory which gets created when using jekyll for g ([379f58e](https://github.com/meanjs/mean/commit/379f58e))
 * updating README file with more elaborate instructions on running grunt in different environment mode ([39e4282](https://github.com/meanjs/mean/commit/39e4282))
