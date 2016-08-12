@@ -3,16 +3,16 @@ module.exports = {
     'airbnb/legacy'
   ],
   rules: {
-    camelcase: 0,
+    'camelcase': 0,
     'comma-dangle': [2, 'never'],
     'comma-spacing': [2, { before: false, after: true }],
     'consistent-return': 0,
-    curly: 0,
+    'curly': 0,
     'default-case': 0,
-    eqeqeq: [2, 'smart'],
+    'eqeqeq': [2, 'smart'],
     'func-names': 0,
     'guard-for-in': 2,
-    indent: [2, 2, { SwitchCase: 1 }],
+    'indent': [2, 2, { SwitchCase: 1 }],
     'key-spacing': [2, { beforeColon: false, afterColon: true }],
     'keyword-spacing': [2, { before: true, after: true }],
     'max-len': 0,
@@ -43,31 +43,31 @@ module.exports = {
     'space-before-function-paren': 0,
     'space-in-parens': [2, 'never'],
     'spaced-comment': [2, 'always'],
-    strict: 0,
+    'strict': 0,
     'quote-props': 0,
-    quotes: [1, 'single'],
+    'quotes': [1, 'single'],
     'wrap-iife': [2, 'outside'],
     'vars-on-top': 0
   },
   env: {
-    node: true,
-    browser: true,
-    jasmine: true,
-    mocha: true,
-    jquery: true
+    'node': true,
+    'browser': true,
+    'jasmine': true,
+    'mocha': true,
+    'jquery': true
   },
-  globals: {
-    angular: true,
-    by: true,
-    browser: true,
-    element: true,
-    inject: true,
-    io: true,
-    moment: true,
-    Modernizr: true,
-    Promise: true,
-    __TESTING__: true,
-    _: false,
-    ApplicationConfiguration: true
+    'globals': {
+    'angular': true,
+    'by': true,
+    'browser': true,
+    'element': true,
+    'inject': true,
+    'io': true,
+    'moment': true,
+    'Modernizr': true,
+    'Promise': true,
+    '__TESTING__': true,
+    '_': false,
+    'ApplicationConfiguration': true
   }
 };

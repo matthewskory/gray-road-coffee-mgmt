@@ -41,3 +41,18 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+
+.indented {
+  text-indent: 1%;
+}
+
+#landing {
+  background: url(../img/brand/grayroad.png);
+  background-position: center;
+  height: 75%;
+}
+
+.opaque_div {
+  background: lightgrey; 
+  opacity: .75;
+}

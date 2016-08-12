@@ -35,7 +35,8 @@ var EmployeeSchema = new Schema({
 
   hiredate: {
   type: Date,
-  default: '',
+  default: Date.now,
+  trim: true
   },
 
   department: {
@@ -51,6 +52,16 @@ var EmployeeSchema = new Schema({
   notes: {
   type: String,
   default: '',
+  },
+
+  birthdate: {
+  type: Date,
+  default: Date.now,
+  },
+
+  position: {
+    type: String,
+    default: '',
   },
   
   user: {

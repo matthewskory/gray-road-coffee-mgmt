@@ -37,6 +37,11 @@ var CustomerSchema = new Schema({
   type: Date,
   default: '',
   },
+
+  lastpurchase: {
+  type: Date,
+  default:'',
+  },
   notes: {
   type: String,
   default: '',

@@ -2,14 +2,20 @@
   <div class="page-header">
     <h1 data-ng-bind="vm.employee.name"></h1>
     <hr>
+    <p><b>Position</b></p>
+    <p class="indented" data-ng-bind="vm.employee.position"></p>
     <p><b>Address</b></p>
-    <p data-ng-bind="vm.customer.address"></p>
+    <p class="indented"  data-ng-bind="vm.employee.address"></p>
     <p><b>Phone Number </b></p>
-    <p data-ng-bind="vm.customer.phonenumber"></p>
+    <p class="indented"  data-ng-bind="vm.employee.phonenumber"></p>
+    <p><b>Birth Date</b></p>
+    <p class="indented"  data-ng-bind="vm.employee.birthdate | date"></p>
+    <p><b>Hire Date</b></p>
+    <p class="indented"  data-ng-bind="vm.employee.hiredate | date"></p>
     <p><b>Email</b></p>
-    <p data-ng-bind="vm.customer.email"></p>
+    <p class="indented"  data-ng-bind="vm.employee.email"></p>
     <p><b>Notes</b></p>
-    <p data-ng-bind="vm.customer.notes"></p>
+    <p class="indented"  data-ng-bind="vm.employee.notes"></p>
     
 
   </div>

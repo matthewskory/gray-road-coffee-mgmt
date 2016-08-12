@@ -1,23 +1,27 @@
 <section>
   <div class="page-header">
-  <div><img style="width: 100px; height: 100px; border-radius: 50px; display: inline" src='http://data-ng-bind="vm.product.imgsrc"'></div>
-    <h1 data-ng-bind="vm.product.name"></h1>
-    <hr>
 
+   
+      <h1 style="text-align: center;" data-ng-bind="vm.product.name"></h1>
+   
+    <hr>  
     <p><b>Manufacturer</b></p>
-    <p data-ng-bind="vm.product.manufacturer"></p>
+    <p class="indented" data-ng-bind="vm.product.manufacturer"></p>
     <p><b>Description</b></p>
-    <p data-ng-bind="vm.product.description"></p>
+    <p class="indented" data-ng-bind="vm.product.description"></p>
     <p><b>Department</b></p>
-    <p data-ng-bind="vm.product.department"></p>
+    <p class="indented" data-ng-bind="vm.product.department"></p>
     <p><b>Price</b></p>
-    <p data-ng-bind="vm.product.price | currency: $"></p>
+    <p class="indented" data-ng-bind="vm.product.price | currency: $"></p>
     <p><b>Cost</b></p>
-    <p data-ng-bind="vm.product.cost | currency: $"></p>
+    <p class="indented" data-ng-bind="vm.product.cost | currency: $"></p>
     <p><b>Quantity in stock</b></p>
-    <p data-ng-bind="vm.product.inventory"></p>
+    <p class="indented" data-ng-bind="vm.product.inventory"></p>
 
-  </div>
+
+    <p><b>Product Images </b></p>
+    <img style="width: 100px; height: 100px; border-radius: 50px;" src='http://images.vectorhq.com/images/previews/dbb/grocery-bag-full-psd-462684.png'></div>
+  
   <div class="pull-right">
     <a class="btn btn-primary"
        data-ui-sref="products.edit({ productId: vm.product._id })">
